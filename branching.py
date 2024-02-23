@@ -1,8 +1,8 @@
 import git
 
-def add_new_feature():
+def delete_new_feature():
     # Add your new feature implementation here
-    print("New feature added!")
+    print("delete feature added!")
 
 def push_to_main():
     try:
@@ -27,7 +27,7 @@ def push_to_main():
         print(f"An error occurred: {e}")
 
 if __name__ == "__main__":
-    add_new_feature()
+    delete_new_feature()
     push_to_main()
 
 
