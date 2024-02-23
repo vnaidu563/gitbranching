@@ -1,5 +1,9 @@
 import git
 
+def add_new_feature():
+    # Add your new feature implementation here
+    print("New feature added!")
+
 def push_to_main():
     try:
         # Path to your local Git repository
@@ -12,7 +16,7 @@ def push_to_main():
         repo.index.add('*')
 
         # Commit changes
-        repo.index.commit("Update files")
+        repo.index.commit("Update files with new feature")
 
         # Push changes to the main branch
         origin = repo.remote(name='origin')
@@ -23,5 +27,7 @@ def push_to_main():
         print(f"An error occurred: {e}")
 
 if __name__ == "__main__":
+    add_new_feature()
     push_to_main()
+
 
